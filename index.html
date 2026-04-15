@@ -464,23 +464,33 @@
 <!-- NUEVO BLOQUE AGREGADO -->
 <!-- ========================= -->
 
-<div id="chinaimport-carousel-container" style="width:100%; margin: 20px 0;">
-  <iframe src="https://www.chinaimport.com.ar/embed/carousel?limit=4&order=random&theme=light&color=0d6efd" 
-      id="chinaimport-carousel" 
-      width="100%" 
-      height="450" 
-      frameborder="0" 
-      scrolling="no" 
-      style="border:none; overflow:hidden;"></iframe>
-  <script>
-    window.addEventListener('message', function(e) {
-      if (e.data.type === 'chinaimport-resize') {
-        const el = document.getElementById('chinaimport-carousel');
-        if(el) el.style.height = e.data.height + 'px';
-      }
-    }, false);
-  <\/script>
-</div>
+<section style="padding:40px 0;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <div id="chinaimport-carousel-container" style="width:100%;">
+          <iframe src="https://www.chinaimport.com.ar/embed/carousel?limit=4&order=random&theme=light&color=0d6efd" 
+              id="chinaimport-carousel" 
+              width="100%" 
+              height="450" 
+              frameborder="0" 
+              scrolling="no" 
+              style="border:none; overflow:hidden;"></iframe>
+          <script>
+            window.addEventListener('message', function(e) {
+              if (e.data.type === 'chinaimport-resize') {
+                const el = document.getElementById('chinaimport-carousel');
+                if(el) el.style.height = e.data.height + 'px';
+              }
+            }, false);
+          <\/script>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ========================= -->
 <!-- FOOTER ORIGINAL -->
